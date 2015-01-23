@@ -10,16 +10,17 @@
   <artifactId>hbase-binding</artifactId>
   <name>HBase DB Binding</name>
 
+  <repositories>
+    <repository>
+      <id>cloudera</id>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.apache.hbase</groupId>
-      <artifactId>hbase</artifactId>
+      <artifactId>hbase-client</artifactId>
       <version>${hbase.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
-      <artifactId>hadoop-core</artifactId>
-      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>
